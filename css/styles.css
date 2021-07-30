@@ -5,6 +5,8 @@
     --negro: #000000;
     --blanco: #ffffff;
     --gris: #1d1d1d;
+    --colorFondo: #FFEBC9;
+    --marron: #753422;
 }
 
 * {
@@ -22,7 +24,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    background-color: #FFEBC9;
+    background-color: var(--colorFondo);
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #753422cb;
+    border-radius: 5px;
+    border-right: 1px solid var(--colorFondo);
 }
 
 body.mobile-menu-active {
@@ -145,7 +157,7 @@ a:visited {
         height: 100vh;
         width: 100vw;
         z-index: 1;
-        background-color: #FFEBC9;
+        background-color: var(--colorFondo); 
     }
 
     body.mobile-menu-active header {
@@ -186,7 +198,7 @@ a:visited {
 }
 
 .nosotros-container-ind a {
-    color:#753422;
+    color: var(--marron);
     font-weight: 600;
     margin-left: -6px;
     display: block;
@@ -247,7 +259,7 @@ a:visited {
 }
 
 .producto-informacion p:last-child {
-    color: #753422;
+    color: var(--marron);
     font-weight:900; 
 }
 
