@@ -22,7 +22,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif; 
     font-size: 16px;
     font-weight: 400;
     background-color: var(--colorFondo);
@@ -54,6 +54,7 @@ header {
     width: 100vw;
     padding: 0.5vw 3vw;
     padding-top: 1vw;
+    font-family: 'Open Sans', sans-serif;;
 }
 
 h1 {
@@ -218,6 +219,10 @@ a:visited {
 
 
 /** Productos **/
+#productos {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .all-products {
     display: flex;
     flex-direction: column;
@@ -271,13 +276,13 @@ a.boton-detalles {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    margin: 0;
-    margin-top: 10px;
+    margin: 10px 0 0 0;
     padding: 10px;
     color: var(--blanco);
     background-color: var(--negro);
-    border: none;
+    border: 2px solid var(--negro);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 
@@ -289,11 +294,6 @@ a.boton-detalles {
 
 .categorias { 
     display: none;
-}
-
-.consultas p {
-    border-bottom: 1px solid #414141;
-    margin-bottom: 1px;
 }
 
 .consultas,
@@ -312,12 +312,13 @@ textarea {
     margin: 0;
     margin-top: 1px;
     margin-bottom: 2px;
-    border: 1px;
-    background-color: #ffdfa7;
+    background: transparent;
+    border-bottom: 1px solid;
 }
 
 textarea {
     max-width: 100%;
+    border: 1px solid;
 }
 
 #boton-form {
@@ -550,6 +551,12 @@ textarea {
         transition: 0.4s;
     }
 
+    a.boton-detalles:hover {
+        background-color: transparent;
+        border: 2px solid var(--negro);
+        color: var(--negro);
+    }
+
 
     /** Contacto **/
     .contacto-container {
@@ -576,7 +583,6 @@ textarea {
 
     .categorias a:hover {
         font-size: 17px;
-        margin: 2px 0;
     }
 
     .consultas {
