@@ -84,7 +84,7 @@
         <section id="productos" class="secciones">
             <h2>Nuestros productos</h2>
             <div class="all-products">
-                <div class="producto">
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_1-b.jpg" alt="imagen de collar">
@@ -96,8 +96,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_2-b.jpg" alt="imagen de collar">
@@ -109,8 +109,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_3-b.jpg" alt="imagen de collar">
@@ -122,8 +122,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_4-b.jpg" alt="imagen de collar">
@@ -135,8 +135,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_5-b.jpg" alt="imagen de collar">
@@ -148,8 +148,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_6-b.jpg" alt="imagen de collar">
@@ -161,8 +161,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_7-b.jpg" alt="imagen de collar">
@@ -174,8 +174,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_8-b.jpg" alt="imagen de collar">
@@ -187,8 +187,8 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
-                <div class="producto">
+                </article>
+                <article class="producto">
                     <a href="#">
                         <figure>
                             <img class="producto-imagen" src="img/img_9-b.jpg" alt="imagen de collar">
@@ -200,7 +200,7 @@
                             <a href="#" class="boton-detalles">Ver detalles</a>
                         </div>
                     </a>
-                </div>
+                </article>
             </div>
         </section>
     </main>
@@ -219,12 +219,15 @@
             <div class="consultas">
                 <h4>Consultas</h4>
                 <form action="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="" id="nombre" placeholder="Tu nombre" required>
-                    <label for="email">E-mail:</label>
-                    <input type="email" name="" id="email" placeholder="Tu email" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="" id="mensaje"></textarea>
+                    <label for="nombre">Nombre:
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                    </label>
+                    <label for="email">E-mail:
+                    <input type="email" name="email" id="email" placeholder="Tu email" required>
+                    </label>
+                    <label for="mensaje">Mensaje:
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                    </label>
                     <input id="boton-form" type="submit" value="Enviar">
                 </form>
             </div>
